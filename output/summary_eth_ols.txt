@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             gw_hap_bin   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                  0.014
+Method:                 Least Squares   F-statistic:                     4.152
+Date:                Wed, 30 Nov 2022   Prob (F-statistic):           0.000154
+Time:                        15:47:29   Log-Likelihood:                -1075.9
+No. Observations:                1600   AIC:                             2168.
+Df Residuals:                    1592   BIC:                             2211.
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   0.6397      0.019     32.810      0.000       0.601       0.678
+race_eth[T.2]               0.0853      0.078      1.098      0.272      -0.067       0.238
+race_eth[T.3]              -0.0595      0.056     -1.057      0.291      -0.170       0.051
+race_eth[T.4]              -0.1456      0.055     -2.642      0.008      -0.254      -0.038
+condition                  -0.0083      0.027     -0.303      0.762      -0.062       0.046
+condition:race_eth[T.2]     0.0889      0.113      0.790      0.430      -0.132       0.310
+condition:race_eth[T.3]     0.2305      0.080      2.898      0.004       0.075       0.387
+condition:race_eth[T.4]     0.2706      0.079      3.408      0.001       0.115       0.426
+==============================================================================
+Omnibus:                     8934.810   Durbin-Watson:                   1.396
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              258.856
+Skew:                          -0.589   Prob(JB):                     6.17e-57
+Kurtosis:                       1.420   Cond. No.                         12.6
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
